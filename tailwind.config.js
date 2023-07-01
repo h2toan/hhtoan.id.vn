@@ -8,8 +8,9 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
-    extend: {},
+    extend: { fontFamily: { display: "var(--font-oswald)" } },
   },
   plugins: [],
 };
