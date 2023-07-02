@@ -1,3 +1,4 @@
+"use client";
 import "../css/tailwind.css";
 
 import { Oswald } from "next/font/google";
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${oswald.variable} h-full antialiased dark js-focus-visible`}
+      className={`${oswald.variable} h-full antialiased ${
+        !localStorage.theme ? "dark" : localStorage.theme
+      } js-focus-visible`}
     >
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
         {children}

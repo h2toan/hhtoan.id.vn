@@ -1,3 +1,11 @@
+import Avatar from "../components/Avatar";
+import MenuWrapper from "./MenuWrapper";
+
 export default function Header() {
-  return <header></header>;
+  return (
+    <header>
+      <MenuWrapper></MenuWrapper>
+      <Avatar></Avatar>
+    </header>
+  );
 }

@@ -1,10 +1,7 @@
 import Container from "../components/Container";
 import ContentWrapper from "../components/ContentWrapper";
-
-import Introduction from "../components/Introduction";
-import ImageCollection from "../components/ImageCollection";
-import Header from "../components/Header";
 import MainContent from "../components/MainContent";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function Page() {
@@ -13,10 +10,7 @@ export default function Page() {
       <Container></Container>
       <ContentWrapper>
         <Header></Header>
-        <MainContent>
-          <Introduction></Introduction>
-          <ImageCollection></ImageCollection>
-        </MainContent>
+        <MainContent></MainContent>
         <Footer></Footer>
       </ContentWrapper>
     </>
