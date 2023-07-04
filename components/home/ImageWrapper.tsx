@@ -1,9 +1,9 @@
 import FeaturedImage from "./FeaturedImage";
-import Pic1 from "../public/image-1.webp";
-import Pic2 from "../public/image-2.webp";
-import Pic3 from "../public/image-3.webp";
-import Pic4 from "../public/image-4.webp";
-import Pic5 from "../public/image-5.webp";
+import Pic1 from "../../public/image-1.webp";
+import Pic2 from "../../public/image-2.webp";
+import Pic3 from "../../public/image-3.webp";
+import Pic4 from "../../public/image-4.webp";
+import Pic5 from "../../public/image-5.webp";
 
 export default function ImageCollection() {
   return (

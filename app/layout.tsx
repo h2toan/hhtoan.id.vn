@@ -1,4 +1,10 @@
 "use client";
+import Container from "../components/layout/Container";
+import ContentWrapper from "../components/layout/ContentWrapper";
+import MainContent from "../components/layout/MainContent";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
+
 import "../css/tailwind.css";
 import { useEffect, useState } from "react";
 
@@ -21,16 +27,23 @@ export default function RootLayout({
     setTheme(themeOption);
   }, []);
 
+  const [activeIndex, setActiveIndex] = useState(0);
   return (
     <html
       lang="en"
       className={`${oswald.variable} h-full antialiased ${theme}`}
     >
-      <head>
-        <title>Software designer, founder, and amateur astronaut</title>
-      </head>
+      <head></head>
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
-        {children}
+        <Container></Container>
+        <ContentWrapper>
+          <Header
+            activeIndex={activeIndex}
+            setActiveIndex={setActiveIndex}
+          ></Header>
+          <MainContent>{children}</MainContent>
+          <Footer setActiveIndex={setActiveIndex}></Footer>
+        </ContentWrapper>
       </body>
     </html>
   );

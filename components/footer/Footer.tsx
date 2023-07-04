@@ -1,7 +1,7 @@
 import CopyRight from "./CopyRight";
 import FooterMenu from "./FooterMenu";
 
-export default function Footer() {
+export default function Footer({ setActiveIndex }) {
   return (
     <footer className="mt-32">
       <div className="sm:px-8">
@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="relative px-4 sm:px-8 lg:px-12">
               <div className="mx-auto max-w-2xl lg:max-w-5xl">
                 <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-                  {/* <FooterMenu></FooterMenu> */}
+                  <FooterMenu setActiveIndex={setActiveIndex}></FooterMenu>
                   <CopyRight></CopyRight>
                 </div>
               </div>

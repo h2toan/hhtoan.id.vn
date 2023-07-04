@@ -1,18 +1,21 @@
-import Container from "../components/Container";
-import ContentWrapper from "../components/ContentWrapper";
-import MainContent from "../components/MainContent";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Introduction from "../components/home/Introduction";
+import ImageWrapper from "../components/home/ImageWrapper";
+import ProfileDetail from "../components/home/ProfileDetail";
 
-export default function Page() {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Software designer, founder, and amateur astronaut.",
+  description:
+    "I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.",
+};
+
+export default function HomePage() {
   return (
     <>
-      <Container></Container>
-      <ContentWrapper>
-        <Header></Header>
-        <MainContent></MainContent>
-        <Footer></Footer>
-      </ContentWrapper>
+      <Introduction></Introduction>
+      <ImageWrapper></ImageWrapper>
+      <ProfileDetail></ProfileDetail>
     </>
   );
 }

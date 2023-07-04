@@ -1,4 +1,4 @@
-import ContentRow from "./ContentRow";
+import ContentRow from "../layout/ContentRow";
 import ArticleWrapper from "./ArticleWrapper";
 import WidgetWrapper from "./WidgetWrapper";
 
