@@ -8,7 +8,7 @@ import Pic5 from "../../public/image-5.webp";
 export default function ImageCollection() {
   return (
     <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+      <div className="-my-4 flex 2xl:justify-center gap-5 py-4 sm:gap-8 overflow-x-auto">
         <FeaturedImage image={Pic1} rotate={"rotate-2"}></FeaturedImage>
         <FeaturedImage image={Pic2} rotate={"-rotate-2"}></FeaturedImage>
         <FeaturedImage image={Pic3} rotate={"rotate-2"}></FeaturedImage>
