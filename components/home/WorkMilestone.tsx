@@ -21,10 +21,7 @@ export default function WorkMilestone() {
         <dt className="sr-only">Role</dt>
         <dd className="text-xs text-zinc-500 dark:text-zinc-400">CEO</dd>
         <dt className="sr-only">Date</dt>
-        <dd
-          className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-          aria-label="2019 until Present"
-        >
+        <dd className="ml-auto text-xs text-zinc-400 dark:text-zinc-500">
           <time dateTime="2019">2019</time> <span aria-hidden="true">—</span>{" "}
           <time dateTime="2023">Present</time>
         </dd>
